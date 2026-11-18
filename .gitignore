@@ -1,0 +1,18 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+*.egg-info/
+*.log
+# Large or unreviewed generated data
+*.npy
+*.npz
+# original scripts produce root-level outputs; documented artifacts are in results/
+results.json
+sensitivity_results.json
+orbital_comparison_results.json
+orbital_coverage_info.json
+full_constraints_results.json
+full_constraints_coverage.json
+figures/*.png

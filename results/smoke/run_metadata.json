@@ -1,0 +1,140 @@
+{
+  "status": "new corrected exploratory/reanalysis run; NOT historical manuscript validation",
+  "created_utc": "2026-11-18T17:07:59.179126+00:00",
+  "mode": "smoke",
+  "settings": {
+    "n_realizations": 4,
+    "n_frrss": 40
+  },
+  "original_manuscript_values": "NOT copied into numerical outputs",
+  "model_assumptions": {
+    "drw_sf_inf": 0.2,
+    "drw_tau_days": 50.0,
+    "drw_stationary_sigma": 0.1414213562373095,
+    "true_lag_days": 10.0,
+    "top_hat_width_days": 4.0,
+    "noise_fraction": 0.03,
+    "campaign_days": 120.0,
+    "satellite_counts": [
+      3,
+      6,
+      12
+    ],
+    "cadence_days": "2/N",
+    "orbit_altitude_km": 500,
+    "full_target_ecliptic_lon_deg": 340,
+    "full_target_ecliptic_lat_deg": 42,
+    "sun_exclusion_deg": 45,
+    "thermal_recovery_minutes": 10,
+    "buffer_limit_hours": 6,
+    "numba_acceleration": "optional; ICCF tested equivalent to NumPy"
+  },
+  "important_limitations": [
+    "no physically modeled pre-campaign DRW history",
+    "lag centroid includes all CCF points above threshold",
+    "mass uncertainty assumes a constant virial factor and assumed BLR line width",
+    "constellation cadence is an assumed sampling schedule",
+    "geometry fixed to illustrative position; not an optimized mission"
+  ],
+  "results": {
+    "baseline_3": {
+      "n_sats": 3,
+      "cadence_days": 0.6666666666666666,
+      "n_epochs": 180,
+      "mean_recovered_lag": 9.751828044077929,
+      "mean_lag_sigma": 0.7985030779708606,
+      "lag_scatter_across_realizations": 0.5318875147347409,
+      "frac_err_lag": 0.08188239931648242,
+      "mass_Msun": 23973716.12119874,
+      "mass_err_Msun": 5181026.085037427,
+      "frac_err_mass": 0.2161127652819793,
+      "n_valid_realizations": 4
+    },
+    "baseline_6": {
+      "n_sats": 6,
+      "cadence_days": 0.3333333333333333,
+      "n_epochs": 360,
+      "mean_recovered_lag": 9.638675056169507,
+      "mean_lag_sigma": 0.649108202522863,
+      "lag_scatter_across_realizations": 0.3932284261495257,
+      "frac_err_lag": 0.06734413171314277,
+      "mass_Msun": 23695542.880436018,
+      "mass_err_Msun": 5000558.623186462,
+      "frac_err_mass": 0.21103372260422534,
+      "n_valid_realizations": 4
+    },
+    "baseline_12": {
+      "n_sats": 12,
+      "cadence_days": 0.16666666666666666,
+      "n_epochs": 720,
+      "mean_recovered_lag": 9.847534410908965,
+      "mean_lag_sigma": 0.6511536729417416,
+      "lag_scatter_across_realizations": 0.18920212018115964,
+      "frac_err_lag": 0.06612352349034724,
+      "mass_Msun": 24208998.907054663,
+      "mass_err_Msun": 5099562.28746319,
+      "frac_err_mass": 0.21064738393528298,
+      "n_valid_realizations": 4
+    },
+    "full_constraints_3": {
+      "n_sats": 3,
+      "n_obs_epochs": 78,
+      "mean_recovered_lag": 8.45227313479947,
+      "mean_lag_sigma": 1.3666170281961851,
+      "lag_scatter_across_realizations": 1.6459225917634575,
+      "lag_sigma_std_across_realizations": 0.4909545281153345,
+      "frac_err_lag": 0.16168633057651516,
+      "mass_Msun": 20778914.045307763,
+      "mass_err_Msun": 5343958.1625008825,
+      "frac_err_mass": 0.25718178297713495,
+      "n_valid_realizations": 4
+    },
+    "coverage_3": {
+      "occulted_frac": 0.36385833333333334,
+      "eclipse_frac": 0.42335833333333334,
+      "downlink_blocked_frac": 0.4140583333333333,
+      "n_attempt": 180,
+      "n_success": 78
+    },
+    "full_constraints_6": {
+      "n_sats": 6,
+      "n_obs_epochs": 170,
+      "mean_recovered_lag": 9.963975939601575,
+      "mean_lag_sigma": 1.5225610528952203,
+      "lag_scatter_across_realizations": 2.8473146192232845,
+      "lag_sigma_std_across_realizations": 1.0378399436912609,
+      "frac_err_lag": 0.15280657662408026,
+      "mass_Msun": 24495256.63647497,
+      "mass_err_Msun": 6165308.161524237,
+      "frac_err_mass": 0.2516939607133451,
+      "n_valid_realizations": 4
+    },
+    "coverage_6": {
+      "occulted_frac": 0.36385833333333334,
+      "eclipse_frac": 0.42335833333333334,
+      "downlink_blocked_frac": 0.4140583333333333,
+      "n_attempt": 360,
+      "n_success": 170
+    },
+    "full_constraints_12": {
+      "n_sats": 12,
+      "n_obs_epochs": 346,
+      "mean_recovered_lag": 12.075678377464627,
+      "mean_lag_sigma": 1.3007566232455585,
+      "lag_scatter_across_realizations": 2.433965996591508,
+      "lag_sigma_std_across_realizations": 0.7943890767959956,
+      "frac_err_lag": 0.10771706421669881,
+      "mass_Msun": 29686627.37731938,
+      "mass_err_Msun": 6743699.2415201925,
+      "frac_err_mass": 0.22716286211320816,
+      "n_valid_realizations": 4
+    },
+    "coverage_12": {
+      "occulted_frac": 0.36385833333333334,
+      "eclipse_frac": 0.42335833333333334,
+      "downlink_blocked_frac": 0.4140583333333333,
+      "n_attempt": 720,
+      "n_success": 346
+    }
+  }
+}
