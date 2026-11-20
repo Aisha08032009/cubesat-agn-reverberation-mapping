@@ -1,0 +1,98 @@
+{
+ "noise": {
+  "D10_V14": {
+   "aperture_cm": 10.0,
+   "V": 14,
+   "noise_cont": 0.011073229719893921,
+   "noise_line": 0.03151063368568478,
+   "t_for_1pct": 146.70485456869892
+  },
+  "D10_V15": {
+   "aperture_cm": 10.0,
+   "V": 15,
+   "noise_cont": 0.01925049142930804,
+   "noise_line": 0.059814124216898606,
+   "t_for_1pct": 433.7945987079446
+  },
+  "D10_V16": {
+   "aperture_cm": 10.0,
+   "V": 16,
+   "noise_cont": 0.03641057391727776,
+   "noise_line": 0.12579377884979762,
+   "t_for_1pct": 1503.3651534916637
+  },
+  "D10_V17": {
+   "aperture_cm": 10.0,
+   "V": 17,
+   "noise_cont": 0.07629910455186224,
+   "noise_line": 0.28790319608166903,
+   "t_for_1pct": 6397.068147480895
+  },
+  "D15_V14": {
+   "aperture_cm": 15.0,
+   "V": 14,
+   "noise_cont": 0.007304058795611806,
+   "noise_line": 0.019756619326968605,
+   "t_for_1pct": 64.42616504617034
+  },
+  "D15_V15": {
+   "aperture_cm": 15.0,
+   "V": 15,
+   "noise_cont": 0.012548559254934758,
+   "noise_line": 0.035615714683694455,
+   "t_for_1pct": 187.88388287892127
+  },
+  "D15_V16": {
+   "aperture_cm": 15.0,
+   "V": 16,
+   "noise_cont": 0.02331424390169419,
+   "noise_line": 0.07073626475529386,
+   "t_for_1pct": 637.0179935634186
+  },
+  "D15_V17": {
+   "aperture_cm": 15.0,
+   "V": 17,
+   "noise_cont": 0.04795066456681112,
+   "noise_line": 0.15503285511109172,
+   "t_for_1pct": 2645.966210721802
+  }
+ },
+ "downlink": {
+  "N1_64 kB cutouts": {
+   "exposures_per_day": 126.64166666666667,
+   "time_limited_per_day": 145.23333333333332,
+   "bw_limited_per_day": 9032.491666666667
+  },
+  "N1_1 MB windows": {
+   "exposures_per_day": 124.425,
+   "time_limited_per_day": 145.23333333333332,
+   "bw_limited_per_day": 578.125
+  },
+  "N1_16 MB full frames": {
+   "exposures_per_day": 35.24166666666667,
+   "time_limited_per_day": 145.23333333333332,
+   "bw_limited_per_day": 35.31666666666667
+  },
+  "N12_64 kB cutouts": {
+   "exposures_per_day": 1515.3916666666667,
+   "time_limited_per_day": 1743.0083333333334,
+   "bw_limited_per_day": 104502.80833333333
+  },
+  "N12_1 MB windows": {
+   "exposures_per_day": 1476.8833333333334,
+   "time_limited_per_day": 1743.0083333333334,
+   "bw_limited_per_day": 6688.75
+  },
+  "N12_16 MB full frames": {
+   "exposures_per_day": 407.15833333333336,
+   "time_limited_per_day": 1743.0083333333334,
+   "bw_limited_per_day": 407.575
+  }
+ },
+ "meta": {
+  "pass_minutes_per_day": 38.54166666666667,
+  "cycle_s": 180.0,
+  "raan_rate_deg_day": -4.769681546541493,
+  "downlink_bps": 2000000.0
+ }
+}
